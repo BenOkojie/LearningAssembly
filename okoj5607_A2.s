@@ -22,8 +22,7 @@ LDR    r5, =0x1500
 
 Loop:
 ldr    r0, [r2], #4 
-mov    r6, #4
-mul    r0, r0, r6
+lsl    r0, #4
 add    r1,r4,r0
 ldrb   r7,[r1]
 strb   r7, [r5], #1
